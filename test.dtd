@@ -1,0 +1,20 @@
+<!ELEMENT 邱田东 (喜欢的图书列表,book-num+,like-book-num?)>
+        <!ATTLIST 邱田东 班级号 CDATA #IMPLIED
+                学号   CDATA #REQUIRED
+                性别   (男|女) #REQUIRED
+                年龄   CDATA #REQUIRED
+                >
+        <!ELEMENT 喜欢的图书列表 (图书+)>
+        <!ATTLIST 喜欢的图书列表 图书数 CDATA #FIXED "4">
+        <!ELEMENT 图书 (图书名,图书种类,图书评价,阅读时间)>
+        <!ELEMENT 图书名 (#PCDATA)>
+        <!ELEMENT 图书种类 (#PCDATA)>
+        <!ELEMENT 图书评价 (#PCDATA)>
+        <!ATTLIST 图书评价  图书质量 CDATA #REQUIRED
+                    图书内容 CDATA #REQUIRED
+                >
+        <!ELEMENT 阅读时间 (#PCDATA)>
+        <!ELEMENT book-num (#PCDATA)>
+        <!ATTLIST book-num 是否共享 (是|否) #REQUIRED>
+        <!ELEMENT like-book-num (#PCDATA)>
+        <!ATTLIST like-book-num 是否共享  (是|否) #REQUIRED>

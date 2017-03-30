@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<首都列表>
+    <中国 xmlns:ch="China">
+        <ch:首都 区号="86"> 北京 </ch:首都>
+    </中国>
+    <美国 xmlns:US="UnitedStates">
+        <US:首都 区号="01"> 华盛顿 </US:首都>
+    </美国>
+    <南极 />
+</首都列表>

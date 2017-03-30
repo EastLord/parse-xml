@@ -1,0 +1,5 @@
+<!ELEMENT 商品信息 (商品*) >
+        <!ELEMENT 商品 (名称,生产日期,价格) >
+        <!ELEMENT 名称 (#PCDATA) >
+        <!ELEMENT 生产日期 (#PCDATA) >
+        <!ELEMENT 价格 (#PCDATA) >

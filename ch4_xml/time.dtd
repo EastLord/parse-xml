@@ -1,0 +1,5 @@
+<!ELEMENT 北京站始发列车时刻表 (客车*) >
+        <!ELEMENT 客车 (车次,开车时间)>
+        <!ELEMENT 车次 (#PCDATA)>
+        <!ELEMENT 开车时间 (#PCDATA)>
+        <!ATTLIST 客车 类别 CDATA #REQUIRED>
