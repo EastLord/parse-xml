@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<studentList>
+    <student xmlns:p1="Liaoning" sex="男">
+        <number>2010111
+            <inputTime>1992-01-01</inputTime>
+        </number>
+        <name>张三</name>
+        <birthDay>1992-01-01</birthDay>
+        <score>611</score>
+    </student>
+    <student sex="女">
+        <number>2010222
+            <inputTime>1992-01-01</inputTime>
+        </number>
+        <name>李翠花</name>
+        <birthDay>1992-02-02</birthDay>
+        <score>522</score>
+    </student>
+    <student sex="男">
+        <number>2010333
+            <inputTime>1992-01-01</inputTime>
+        </number>
+        <name>孙五</name>
+        <birthDay>1992-03-03</birthDay>
+        <score>433</score>
+    </student>
+</studentList>

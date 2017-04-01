@@ -1,3 +1,5 @@
+package test;
+
 import org.w3c.dom.*;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -18,7 +20,7 @@ public class testJAX {
         try { DocumentBuilderFactory factory=
                 DocumentBuilderFactory.newInstance();
             DocumentBuilder domPaser=factory.newDocumentBuilder();
-            Document document=domPaser.parse(new File("test.xml")) ;
+            Document document=domPaser.parse(new File("src/test/test_xml/test.xml")) ;
             NodeList nodeList=document.getChildNodes();
             give.output(nodeList);
             System.out.println("平均质量:"+give.average/give.count);

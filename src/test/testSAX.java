@@ -1,3 +1,5 @@
+package test;
+
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
 
@@ -16,7 +18,7 @@ public class testSAX {
      */
     public static void main(String[] args) {
         try {
-            File file = new File("test.xml");
+            File file = new File("src/test/test_xml/test.xml");
             SAXParserFactory factory = SAXParserFactory.newInstance();
             factory.setValidating(true);
             SAXParser saxParser = factory.newSAXParser();
