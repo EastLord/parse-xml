@@ -11,7 +11,7 @@
         <!ELEMENT 图书种类 (#PCDATA)>
         <!ELEMENT 图书评价 (#PCDATA)>
         <!ATTLIST 图书评价  图书质量 CDATA #REQUIRED
-                    图书内容 CDATA #REQUIRED
+                图书内容 CDATA #REQUIRED
                 >
         <!ELEMENT 阅读时间 (#PCDATA)>
         <!ELEMENT book-num (#PCDATA)>

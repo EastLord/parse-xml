@@ -7,7 +7,16 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
 import java.io.File;
+
+/**
+ * The type Jaxp seven.
+ */
 public class JAXPSeven {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -22,6 +31,7 @@ public class JAXPSeven {
             System.out.println("system标识：" + systemId);
             String internalDTD = doctype.getInternalSubset();
             System.out.println("内部DTD：" + internalDTD);
-        } catch (Exception e) { }
+        } catch (Exception e) {
+        }
     }
 }
