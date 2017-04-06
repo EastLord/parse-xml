@@ -18,9 +18,21 @@ import java.awt.event.ActionListener;
 public class testXPath {
     public static void main(String args[]) {
         XPathWindow win = new XPathWindow("src/test/test_xml/test.xml");
-        //    /邱田东/喜欢的图书列表/图书/图书评价[@图书质量>8]/../图书名
-        //    /邱田东/喜欢的图书列表/图书/图书种类[text()='心理学1']/../图书名
-        //    /邱田东/喜欢的图书列表/图书/阅读时间[contains(text(),'4')]/../图书名
+        /**
+         *  输出“图书质量”大于8的图书名称(两种实现方式)
+         *  1   /邱田东/喜欢的图书列表/图书/图书评价[@图书质量>8]/preceding-sibling::*[2]
+         *  2   /邱田东/喜欢的图书列表/图书/图书评价[@图书质量>8]/../图书名
+         */
+        /**
+         *  输出“心理学1”类图书名字(两种实现方式)
+         *  1   /邱田东/喜欢的图书列表/图书/图书种类[text()='心理学1']/preceding-sibling::*[1]
+         *  2   /邱田东/喜欢的图书列表/图书/图书种类[text()='心理学1']/../图书名
+         */
+        /**
+         *  输出“阅读时间”含有4的图书名字(两种实现方式)
+         *  1   /邱田东/喜欢的图书列表/图书/阅读时间[contains(text(),'4')]/preceding-sibling::*[3]
+         *  2   /邱田东/喜欢的图书列表/图书/阅读时间[contains(text(),'4')]/../图书名
+         */
     }
 }
 class XPathWindow extends JFrame implements ActionListener {
