@@ -1,8 +1,4 @@
-package XPath;
-
-/**
- * Created by archer on 17-4-1.
- */
+package test;
 
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -16,12 +12,17 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class example6_5 {
+/**
+ * Created by archer on 17-4-6.
+ */
+public class testXPath {
     public static void main(String args[]) {
-        XPathWindow win = new XPathWindow("ch6_xml/example6_5.xml");
+        XPathWindow win = new XPathWindow("src/test/test_xml/test.xml");
+        //    /邱田东/喜欢的图书列表/图书/图书评价[@图书质量>8]/../图书名
+        //    /邱田东/喜欢的图书列表/图书/图书种类[text()='心理学1']/../图书名
+        //    /邱田东/喜欢的图书列表/图书/阅读时间[contains(text(),'4')]/../图书名
     }
 }
-
 class XPathWindow extends JFrame implements ActionListener {
     XPathFactory xPathFactory;
     XPath xPath;
@@ -35,7 +36,7 @@ class XPathWindow extends JFrame implements ActionListener {
             xPathFactory = XPathFactory.newInstance();
             xPath = xPathFactory.newXPath();
             source = new InputSource(fileName);
-            inputXPath = new JTextField(25);
+            inputXPath = new JTextField(30);
             showResult = new JTextArea();
             button = new JButton("确定");
             button.addActionListener(this);
@@ -67,7 +68,7 @@ class XPathWindow extends JFrame implements ActionListener {
                 Node node = nodelist.item(k);
                 String name = node.getNodeName();
                 showResult.append("第" + (k + 1) + "个节点的名字:" + name + ",");
-                String value = node.getNodeValue();
+                String value = node.getTextContent();
                 showResult.append("第" + (k + 1) + "个节点的值:" + value + "\n");
             }
         } catch (Exception exp) {
