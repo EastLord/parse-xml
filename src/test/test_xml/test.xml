@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!--<!DOCTYPE 邱田东 SYSTEM "test.dtd">-->
+<!DOCTYPE 邱田东 SYSTEM "test.dtd">
 <!--我最喜欢的图书-->
 <邱田东 学号="20141412" 年龄="23" 性别="男" 班级号="140408">
     <喜欢的图书列表>
