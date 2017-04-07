@@ -11,7 +11,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 
 /**
- * The type Jaxp eight.
+ * The type shiyan1_2.
  */
 public class shiyan1_2 {
     /**
@@ -36,7 +36,7 @@ public class shiyan1_2 {
 }
 
 /**
- * The type Give data 8.
+ * The type Give data.
  */
 class GiveData {
     /**
