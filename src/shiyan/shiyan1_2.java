@@ -60,7 +60,7 @@ class GiveData {
                 Text textNode = (Text) node;
                 String content = textNode.getWholeText();
                 Text_count++;
-                System.out.print(content);
+                System.out.println(content);
             }
             if (node.getNodeType() == Node.ELEMENT_NODE) {
                 Element elementNode = (Element) node;
